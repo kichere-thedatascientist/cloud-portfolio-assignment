@@ -6,7 +6,7 @@ function App() {
     const [message, setMessage] = useState('Loading backend...');
       useEffect(() => {
     axios
-      .get('http://127.0.0.1:5000/api/profile')
+      .get('https://portfolio-backend-cbt7.onrender.com/api/profile')
       .then((response) => {
         setMessage(response.data.message);
       })
